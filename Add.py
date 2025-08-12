@@ -1,4 +1,4 @@
-print("Hello world")
+print("Hello Galaxy")
 x = 9
 y = 8
 
