@@ -1,0 +1,48 @@
+json datatypes: 
+1. number -- {
+    "age":15
+}
+
+2. string -- {
+    "name":"Rian"
+}
+
+3. boolean -- {
+    "present":True
+}
+
+4. array -- {
+    "employees":["R", "m", "c"]
+}
+
+5. null -- {
+    "muh": null
+}
+
+6. object -- {
+    "name":"rian",
+    "age":40,
+    "location":"earth"
+    
+}
+
+
+
+
+
+{
+    "student" : [
+        {
+            "name":"Rian",
+            "id": 13,
+            "gender": "male"
+        },
+
+        {
+           "name":"mansi"
+           "id": 12
+           "gender": "female" 
+        }
+
+    ]
+}
