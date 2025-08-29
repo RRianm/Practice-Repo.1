@@ -1,0 +1,30 @@
+{
+"id 1212" : {
+    "isActive" : True,
+    "balance" : 1,742.36$,
+    "age" : 34,
+    "name" : "john",
+    "gender" : "male",
+    "email" : "johnwood@gmail.com",
+    "phone" : +1(972) 576-20249,
+    "adress" : "home",
+    "tags" : ["eu", "ven", "magna"]
+    "friends" : [
+        {
+            "id" : 0,
+            "name" : Lula Cannon
+        },
+        {
+            "id": 0,
+            "name" : "rachel snider"
+            }
+        
+        
+    ]
+    
+
+},
+
+
+
+}
