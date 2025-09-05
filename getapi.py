@@ -53,31 +53,57 @@
 # _print(f"Country: {country}")
 
 #________________________________________________________________________
-import requests
+# import requests
 
-url = "https://api.freeapi.app/api/v1/public/randomusers/user/random"
+# url = "https://api.freeapi.app/api/v1/public/randomusers/user/random"
 
-def getusername():
-    response = requests.get(url)
+# def getusername():
+#     response = requests.get(url)
     
-    if response.status_code == 200:
+#     if response.status_code == 200:
+#         info = response.json()
+#         user_info = info["data"]
+#         username = info["data"]["name"]["first"]
+#         longitude = info["data"]["location"]["coordinates"]["longitude"]
+#         latitude = info["data"]["location"]["coordinates"]["latitude"]
+#         return username, longitude, latitude
+#     else: 
+#         print("failed to access data")
+
+# information = getusername()
+# if information:
+#     username, longitude, latitude = information
+#     print(f"Name: {username}")
+#     print("Current Coordinates:     ")
+#     print(f"Current longitude: {longitude}")
+#     print(f"Current Latidude: {latitude}")
+
+
+
+
+
+import requests
+import random 
+url = "https://api.freeapi.app/api/v1/public/stocks"
+def getstock():
+    response = requests.get(url)
+    if response.status_code == 200: 
         info = response.json()
-        user_info = info["data"]
-        username = info["data"]["name"]["first"]
-        longitude = info["data"]["location"]["coordinates"]["longitude"]
-        latitude = info["data"]["location"]["coordinates"]["latitude"]
-        return username, longitude, latitude
-    else: 
-        print("failed to access data")
+        randomnum = random.randint(0,3)
+        data1 = info["data"]["data"]
+        data2 = data1[randomnum]["Name"]
+        return data2
+information = getstock()
 
-information = getusername()
+data2 = information
 if information:
-    username, longitude, latitude = information
-    print(f"Name: {username}")
-    print("Current Coordinates:     ")
-    print(f"Current longitude: {longitude}")
-    print(f"Current Latidude: {latitude}")
+    print(f"Name of stock: {data2}")
+else: 
+    print("error")
+  
 
 
 
 
+
+   

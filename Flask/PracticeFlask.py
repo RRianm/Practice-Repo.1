@@ -11,13 +11,5 @@
 
 
 
-#______________________________________________________
-
-from flask import Flask,jsonify
-
-app = Flask(__name__)
-def farewell():
-    return "Bye!"
-
-if __name__ == "__main__":
-    app.run()
+#_____________________________________________________
+from flad
