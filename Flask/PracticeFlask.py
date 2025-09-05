@@ -12,4 +12,13 @@
 
 
 #_____________________________________________________
-from flad
+from flask import Flask
+app = Flask(__name__)
+@app.route("/yes")
+def imuststop():
+    return "sweden will beat slovakia 3-1 or will draw 2-2 but not lose"
+
+
+if __name__ == "__main__":
+    app.run()
+
